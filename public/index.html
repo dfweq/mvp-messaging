@@ -3,11 +3,11 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>MVP Messaging</title>
+  <title>MVP Messaging (E2EE)</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>MVP Two-Person Messenger</h1>
+  <h1>MVP Two-Person Messenger (End-to-End Encrypted)</h1>
 
   <div id="chat-container">
     <div id="messages"></div>
@@ -17,6 +17,11 @@
 
   <!-- Socket.IO client script -->
   <script src="/socket.io/socket.io.js"></script>
+  
+  <!-- Load crypto-js (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.js"></script>
+
+  <!-- Main script -->
   <script src="script.js"></script>
 </body>
 </html>
